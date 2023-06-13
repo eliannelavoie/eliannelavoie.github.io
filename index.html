@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Élianne Lavoie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Page personnelle d'Élianne Lavoie, programmeuse.">
+    <style>
+        html {
+            font-size: 16px;
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        * {
+            color: rgb(78, 78, 78);
+            background-color: rgb(230, 230, 230);
+            font-family: -apple-system, BlinkMacSystemFont,
+                “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”,
+                “Fira Sans”, “Droid Sans”, “Helvetica Neue”,
+                sans-serif;
+        }
+
+        .night * {
+            color: rgb(200, 200, 200);
+            background-color: rgb(31, 31, 31);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            font-weight: 100;
+            margin-top: 0;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+        }
+
+        main ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 10vh;
+        }
+
+        main li {
+            display: inline;
+        }
+
+        main a {
+            padding: 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Élianne Lavoie</h1>
+        <h2>Programmeuse</h2>
+        <ul>
+            <li>
+                <a href="https://github.com/eliannelavoie">GitHub</a>
+            </li>
+            <li>
+                <a href="eliannelavoie.pdf">CV</a>
+            </li>
+            <li>
+                <a href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#101;&#108;&#097;&#118;&#111;&#105;&#101;&#046;&#099;&#111;&#109;">Contact</a>
+            </li>
+        </ul>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var hours = new Date().getHours();
+            if (hours < 6 || hours > 21) {
+                document.querySelector('body').classList.add('night');
+            }
+        })
+    </script>
+</body>
+
+</html>
